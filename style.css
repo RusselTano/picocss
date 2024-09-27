@@ -1,0 +1,25 @@
+body {
+  /* background-color: #fff; */
+  height: 100vh;
+}
+.input-box {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px 14px;
+  box-shadow: 0 3px 3px 3px rgba(255, 255, 255, .3);
+  margin: 10px;
+  border-radius: 8px;
+  width: 600px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+}
+

@@ -1,11 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <!-- <meta name="color-scheme" content="light dark" /> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Pico css</title>
 </head>
+
 <body>
+
+  <!-- <div class="card" data-theme="dark">
+    <h1>Card</h1>
+
+    <input type="text" placeholder="Login">
+    <input type="text" placeholder="Password">
+    <button>Login</button><br>
+
+
+    <label>
+      <input type="checkbox">
+      Remember me
+    </label>
+  </div> -->
+
+  <form>
+    <fieldset>
+      <label>
+        First name
+        <input
+          name="first_name"
+          placeholder="First name"
+          autocomplete="given-name"
+        />
+      </label>
+      <label>
+        Email
+        <input
+          type="email"
+          name="email"
+          placeholder="Email"
+          autocomplete="email"
+        />
+      </label>
+    </fieldset>
   
+    <input
+      type="submit"
+      value="Subscribe"
+    />
+
+    <input type="color" name="" id="">
+  </form>
+
+  <input
+  type="text"
+  name="valid"
+  value="Valid"
+  aria-invalid="false"
+>
+
+<input
+  type="text"
+  name="invalid"
+  value="Invalid"
+  aria-invalid="true"
+>
+
+<select aria-invalid="false"></select>
+
+<small>Great choice!</small>
+
+<select required aria-invalid="true">
+  ...
+</select>
+<small>
+  Please select your favorite pizza topping!
+</small>
+
+<fieldset>
+  <label>
+    <input name="2fa" type="checkbox" role="switch" aria-invalid="false" />
+    Enable two-factor authentication
+  </label>
+  <label>
+    <input name="subscription" type="checkbox" role="switch" aria-invalid="true" />
+    Automatic subscription renewal
+  </label>
+</fieldset>
+
+<label>
+  Brightness
+  <input type="range" />
+</label>
+
+<label>
+  Contrast
+  <input type="range" value="40" />
+</label>
 </body>
+
 </html>
